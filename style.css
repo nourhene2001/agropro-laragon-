@@ -1,0 +1,255 @@
+/* importer les font-family:Poppins*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*** configuration de la mise en page globale ***/
+*{
+    box-sizing: border-box !important;
+}
+body {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    width:1200px;
+    width: 100%;
+    height: 1500px;
+    margin-top: 0px ;
+    margin-bottom: 0px ;
+    margin-left: 0px ;
+    margin-right: 0px ;
+    /* la taille 1200 × 1500 pixels */
+    /* une marge extérieurs zéro sur les cotés.*/
+}
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+    /* Supprimez le soulignement */
+    /* couleur du texte #1f1f1f. */
+}
+/* Définissez la couleur des liens lors du passage 
+de la souris ou lors d'un click à #6b7908. */
+a:hover{
+   /* à compléter */ 
+    color:#6b7908 ;;
+}
+a:active {
+    /* à compléter */
+    color:#6b7908;
+}
+
+/**** Partie header ***/
+
+header {
+    border-top: #6b7908 solid 15px;
+    width: 1520px;
+    height: 500px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    /* taille 100 * 500 px */
+    /* positionnement en haute à gauche */
+}
+img.banner{
+    opacity: 0.8;
+    width:100%;
+    height:600px;
+    position:relative;
+    margin-top: 0%;
+    /* appliquer un niveau de transparence 0.8 à l'image*/
+    /*définissez la taille de l'image*/
+    /*définissez la bonne marge extérieur (par rapport à la balise header)*/
+}
+.logo{ 
+    position: absolute;
+    top: 10px;
+    left:20px;
+     
+}
+.logo a {
+    color: #1c1c1b;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.logo a span {
+    color: #6b7908;  
+}
+nav#menu {
+    
+    width: 50%;
+   
+   top: 10px;
+   position:absolute;
+   text-align: center;
+   right:400px;
+   left:400px;
+  
+   
+
+
+    /*positionner le menu */
+}
+nav#menu ul { 
+    margin:0;
+    font-size: 150%;
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+
+    /*appliquer des styles pour personnaliser l'affichage de la liste*/
+    /* il est préférer d'utiliser les flexbox */
+}
+ 
+/***** Partie main ****/
+main{
+    margin-top: 630px;
+    margin-bottom: 10px;
+    margin-left: 225px;
+   /* positionner en haut ... à gauche 300 */  
+}
+.titlepage{
+    padding: 0;
+    height: 100px;
+    text-align: left;
+    text-decoration: solid;
+    text-transform: uppercase;
+    /* aligner le texte à gauche */
+    /* mettre en gras */
+     /*mettre en majuscule */
+}
+.titlepage span  {
+    height: 50px;
+    font-size: 24px;
+    color:#6b7908;
+    display: inline;
+    
+    /* taille du texte 24px */
+    /* couleur #6b7908; */
+    /* changer le style d'affichage display:... */
+   
+   
+}
+.titlepage h2 { 
+    margin-top: 0;
+    font-size:50px ;
+    color:#999998;
+    /* taille du texte 50px */
+    /* couleur #999998; */
+}
+article{
+    padding: 30px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    
+    /* positionner les sections dans article en flex */
+    /* ajuster la position de l'élément article, si nécessaire */
+
+}
+section{
+    width:300px;
+    border:solid 0px #f0eeee;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 10px 10px  5px #f0eeee;
+    padding:5px;
+    padding-right: 0px;
+    /* largeur 300px*/
+    /* bordure arrondie des 4 cotés */
+    /* définir les marges intérieurs */
+    /* définir un ombre avec blur , et de couleur #f0eeee;*/
+    background: #fff;
+}
+section img{
+    /* bordure arrondie seulement des deux cotés en haut*/
+    border-radius: 10px 10px 0px 0px;
+    margin:0;
+    width: 100%;
+   
+}
+section h3 {
+    color: #292928;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    /* appliquer un espacement intérieur en bas*/
+}
+section p{
+    height:100px;
+    width:100%;
+    text-overflow:clip;
+    /* prend la largeur de son conteneur*/
+    /* masquer le reste du texte s'il dépasse la taille de la boite*/
+}
+.read_more {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    display: inline;
+    position: relative;
+    bottom: 20px;
+    margin-left: 100px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    border-radius: 5px 5px 5px 5px;
+    /*centrer le bouton dans son conteneur,
+     en appliquant une marge extérieure automatique :
+     margin: .....;
+     */
+    /* modifier le type d'affichage du lien : 
+    display: ...*/
+    /* appliquer les marges intérieures / extérieures, haut / bas
+     nécessaire pour bien positionner le bouton dans la boite */
+   /* appliquer une bordure arrondie */
+
+}
+
+footer {
+    padding-top: 10px;
+    padding-left: 50px;
+    background: #6b7908;
+    position: absolute;
+    width: 100%;
+    /* largeur width: prend la largeur du fenêtre */
+    height: 70px;
+    text-align: center;
+    text-align: left;
+    font-size: 110%;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    bottom:0;
+
+    /* définir un positionnement fixe en bas de la page*/
+   /* positionner les éléments intérieurs en flex */
+}
+footer p{
+    color: white;
+    
+}
+footer ul{
+    width: 200px;
+    display:flex;
+    justify-content: space-around;
+    color:rgb(255, 255, 255);
+    list-style-type: none;
+    
+    /*personnaliser l'affichage de la liste 
+    pour afficher les icones de scial media comme dans la maquette*/
+}
+
+#toggle{
+   
+    max-width: 0;
+    overflow: hidden;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    #toggle{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="css/styleForm.css">
+    <link rel="stylesheet" href="css/responsiveDesign.css">
+    <script src="js/script.js" rel="text/javascript"></script>
+</head>
+<body>
+    <div class="titlepage"><h2>Contact</h2></div>
+<article>
+<p>Une remarque ? une suggestion ? N'hésitez pas à nous écrire.</p>
+<form id="myForm" action="" method="post"  >
+    
+        <label for="nom">Votre nom:</label>
+        <input type="text" name="nom" id="nom">
+        <p id="ErrorName"></p>
+        <label for="email">Votre email:</label>
+        <input type="email" name="email" id="email">
+        <p id="ErrorEmail"></p>
+        <label for="sujet">Sujet:</label>
+        <input type="text" name="sujet" id="sujet">
+        <p id="ErrorSujet"></p>
+        <label for="msg">Message:</label>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <p id="ErrorMsg"></p>
+        <p></p>
+    <div>
+        <!-- Définir la balise correspondante au bouton Envoyer -->
+        <input type="button" value="Envoyer" onclick="verifContact();" />
+        <input type="reset" value="Annuler"/>
+    </div>
+        
+    
+</form>
+</article>
+</body>
+</html>

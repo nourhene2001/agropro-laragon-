@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiveDesign.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/styleForm.css">
+    <script src="js/script.js" ></script>
+    <!--Importer le fichier JS ci-dessus, pour pouvoir afficher 
+        les icones des social media (facebook, twitter, linked-in)-->
+    <script src="https://kit.fontawesome.com/7d1030dc74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     
+     <!--header -->
+    <header>
+        <div id="slider">
+        <img src="images/banner.jpg" alt="banner" class="banner" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"> < </div>
+        <div id="suivant" onclick="ChangeSlide(1)"> > </div>
+    </div>
+        <div class="logo">
+            <a href="index.html">Agro<span>Pro</span></a>
+         </div>
+         <div id="toggle">
+            <img src="images/menu.png" alt="Menu" onclick="afficher();">
+         </div>
+         <nav id="menu" onmouseleave="masquer();">
+            
+                <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Service</a></li>
+                <li><a>Blog</a></li>
+                <li><a href="#" onclick="loadDoc('contact.html')">Contact</a></li>
+                </ul>
+                
+                
+        </nav>
+    </header>
+    <!--end header-->
+    <!--services-->
+    <main>
+        <div class="titlepage">
+            <span>What We Do</span>
+                <h2>SERVICES WE OFFER</h2>
+         </div>
+         <article>
+        <section>
+           <img src="images/service1.jpg">
+           <h3>FRESH <br> VEGETABLES</h3>
+           <p>We deliver organic fruits and vegetables fresh from ourfields to your doorstep</p>
+           <a class="read_more" href="#">Read More</a>
+        </section>
+        <section>
+            <img src="images/service2.jpg">
+            <h3>AGRICULTURE PRODUCTS</h3>
+            <p>We bring the experiences,expertise and global port connectivity essential to the agricutltural sector</p>
+            <a class="read_more" href="#">Read More</a>
+        </section>
+        <section>
+            <img src="images/service3.jpg">
+            <h3>ORGANIC PRODUCTS</h3>
+            <p>Delivery to your door is included ! Skip your delivery or change frequency to fit your schedule or vacations</p>
+            <a class="read_more" href="#">Read More</a>
+        </section>
+    </article>
+    </main>
+    <!--end services-->
+    <!--footer-->
+    <footer>
+        <p>All right Reserved &COPY;isims 2021-2022</p>
+        <ul ><!-- les classe fa fa-facebook, fa-twitter, 
+            et fa-linkedin sont définies dans le kit:
+             https://kit.fontawesome.com/7d1030dc74.js
+            Utilisées pour afficher les icones-->
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+         </ul>
+    </footer>
+    <!--end footer-->
+    <script>var idInt=window.setInterval("ChangeSlide(1)", 4000);</script>
+</body>
+</html>

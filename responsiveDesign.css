@@ -1,0 +1,116 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    header {
+        /* définir la taille du header */
+       width:100%;
+       
+     
+    }
+    
+    .logo{ 
+       /* ajuster la position du logo */
+    left:50px;
+    
+    }
+    main{
+       /* ajuster la position du main par rapport au header */
+       top:0px;
+       position: relative;
+       margin-left:80px;
+       
+       
+    }
+    nav#menu {
+       left:5px;
+       top:50px;
+       margin-bottom: 0;
+       padding: 0;
+       display: none;
+       overflow: hidden;
+        /* masquer le menu, on fait il ne doit être afficher 
+        que lors du click sur l'icone menu */
+        /* ajuster la position du menu lorsqu'il s'affiche au dessus de l'icone menu*/
+    }
+    
+    nav#menu ul li a{
+        /* changer la couleur des liens du menu, par exemple à #8d9f05; */
+        color:#8d9f05;
+    }
+    nav#menu ul li a:hover{
+         /* changer la couleur des liens du menu lors du passage de la souris,
+          par exemple à white */
+          color:white;
+    }
+    nav#menu ul li:hover{ /* changer la couleur du background à #8d9f05, 
+        lors du passage de la souris*/
+    background-color:#8d9f05 ;
+    }
+    nav#menu ul li{
+        background-color: black;
+        padding: 13.5px;
+        
+       
+        
+        /* définir la taille et les marges du li */
+    }
+    
+    nav#menu ul { 
+        /* changer la direction du boxflex à column au lieu de row*/
+        width: 100px;
+        height: 250px;
+        font-weight: bold;
+        font-size: 120%;
+        padding-left:0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-bottom: 0;
+       
+       }
+        
+    #toggle img
+     {
+        display: inline;
+        width: 30px;
+        /* positionner l'icone */
+        background: transparent;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left:5px;
+    }
+    
+    .titlepage h2 { 
+        /*définir la taille du texte */
+        font-size: 30px;
+        
+    }
+    article{ 
+        /*définir le width et les marges */
+        width:100%;
+        padding: 0px;
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        
+        margin: 0px;
+
+    }
+    section{
+        /*définir le width */
+        width:40%;
+        
+        
+        
+    }
+    section h3 {
+         /*définir le width */
+        width:50%;
+    }
+    footer{
+        /* changer le height du footer et la taille du texte*/
+        height: 50px;
+        width: 100%;
+        font-size: 90%;
+    }
+ 
+}
